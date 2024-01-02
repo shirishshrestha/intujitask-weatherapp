@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  background-image: url("/aurora-1197753_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.weather {
+  height: auto;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: whitesmoke;
+  width: 80%;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+}
+
+.search-box i::before {
+  color: whitesmoke;
+}
+
+.search-box button::before {
+  color: whitesmoke;
+}
+
+.search-box input::placeholder {
+  color: #f5f5f5;
+  font-family: "Manrope", sans-serif;
+}
+
+.content i {
+  color: #f5f5f5;
+}
+
+.weather-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location-name {
+  font-size: 2rem;
+}
+
+.weather-icon {
+  width: 150px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.temperature sup {
+  font-size: 2rem;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+}

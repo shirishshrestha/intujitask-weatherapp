@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="getInitialWeather()">
+    <main>
+      <div class="weather">
+        <div class="search-box">
+          <i class="bx bxs-map"></i>
+          <input
+            type="text"
+            placeholder="Enter Your Location"
+            class="search-input"
+          />
+          <button
+            class="bx bx-search search-icon"
+            style="background: none; border: none"
+          ></button>
+        </div>
+        <h4 class="location-name">Kathmandu</h4>
+        <figure class="weather-image">
+          <img src="clear.svg" alt="" class="weather-icon" />
+          <figcaption class="weather-info">
+            <h2 class="temperature">0 <sup>° C</sup></h2>
+            <div class="description"><p>Broken Clouds</p></div>
+          </figcaption>
+        </figure>
+        <div class="weather-details">
+          <div class="content">
+            <i class="bx bxs-sun bx-md"></i>
+            <div class="sunrise-content">
+              <p></p>
+              <div><p>Sunrise</p></div>
+            </div>
+          </div>
+          <div class="content">
+            <i class="bx bx-sun bx-md"></i>
+            <div class="sunset-content">
+              <p></p>
+              <div><p>Sunset</p></div>
+            </div>
+          </div>
+          <div class="content">
+            <i class="bx bx-water bx-md"></i>
+            <div class="humidity-content">
+              <p></p>
+              <div><p>Humidity</p></div>
+            </div>
+          </div>
+          <div class="content">
+            <i class="bx bx-wind bx-md"></i>
+            <div class="wind-content">
+              <p></p>
+              <div><p>Wind Speed</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
