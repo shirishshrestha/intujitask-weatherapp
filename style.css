@@ -23,7 +23,7 @@ main {
 }
 
 .weather {
-  height: auto;
+  height: fit-content;
   width: fit-content;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
@@ -61,8 +61,10 @@ main {
   color: whitesmoke;
 }
 
-.search-box button::before {
-  color: whitesmoke;
+.button {
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 .search-box input::placeholder {
@@ -70,8 +72,8 @@ main {
   font-family: "Manrope", sans-serif;
 }
 
-.content i {
-  color: #f5f5f5;
+.heading {
+  text-align: center;
 }
 
 .weather-image {
@@ -83,6 +85,10 @@ main {
 
 .location-name {
   font-size: 2rem;
+}
+
+.location-name sup {
+  font-size: large;
 }
 
 .weather-icon {
@@ -111,9 +117,17 @@ main {
 .weather-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   font-weight: bold;
 }
 
 .content {
   display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.content i {
+  color: #f5f5f5;
+  font-size: 2rem;
 }
